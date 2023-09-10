@@ -34,7 +34,7 @@
         <?= $message ?>
     </h1> -->
     <!-- Arrays -->
-    <h1>Recommended Book</h1>
+    <!-- <h1>Recommended Book</h1>
     <?php
     $books = [
         "Do Androids Dream of Electric Sheep",
@@ -46,7 +46,7 @@
         <?php foreach ($books as $book) : ?>
             <li><?= $book ?></li>
         <?php endforeach; ?>
-    </ul>
+    </ul> -->
 </body>
 
 </html>
