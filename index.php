@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <title>Demo</title>
     <style>
-        body {
+        /* Conditionals and Booleans  */
+        /* body {
             display: grid;
             place-items: center;
             height: 100vh;
             margin: 0;
             font-family: sans-serif;
-        }
+        } */
     </style>
 </head>
 
@@ -23,15 +24,29 @@
             echo "$greeting Josmi!";
             ?> -->
     <!-- Conditionals and Booleans -->
-    <?php
-        $name = "Dark Matters";
-        $read = true;
-        $message = "You have read $name";
-    ?>
+    <!-- <?php
+            $name = "Dark Matters";
+            $read = true;
+            $message = "You have read $name";
+            ?>
     <h1>
-        <!-- <?php echo $message; ?> -->
-        <?=  $message ?>
-    </h1>
+        /*<?php echo $message; ?>*/
+        <?= $message ?>
+    </h1> -->
+    <!-- Arrays -->
+    <h1>Recommended Book</h1>
+    <?php
+    $books = [
+        "Do Androids Dream of Electric Sheep",
+        "The Langoliers",
+        "Hail Mary"
+    ];
+    ?>
+    <ul>
+        <?php foreach ($books as $book) : ?>
+            <li><?= $book ?></li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 
 </html>
