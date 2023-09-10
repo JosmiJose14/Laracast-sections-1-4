@@ -52,31 +52,34 @@
     </ul> -->
 
     <!-- Associated Arrays -->
-<?php
+    <?php
     $books = [
-        ['name' => 'Do Androids Dream of Electric Sheep',
-         'author' => 'author',
-         'purchaseUrl' => 'http://example.com'
+        [
+            'name' => 'Do Androids Dream of Electric Sheep',
+            'author' => 'author',
+            'purchaseUrl' => 'http://example.com'
         ],
-        ['name' => 'The Langoliers',
-         'author' =>'author',
-         'purchaseUrl' => 'http://example.com'
+        [
+            'name' => 'The Langoliers',
+            'author' => 'author',
+            'purchaseUrl' => 'http://example.com'
         ],
-        ['name' =>'Hail Mary',
-         'author' =>'author',
-         'purchaseUrl' => 'http://example.com'
+        [
+            'name' => 'Hail Mary',
+            'author' => 'author',
+            'purchaseUrl' => 'http://example.com'
         ],
     ];
     ?>
     <ul>
         <?php foreach ($books as $book) : ?>
             <li>
-                <a href="<?= $book['purchaseUrl']?>">
-                   <?= $book['name'] ?>
-                 </a>
+                <a href="<?= $book['purchaseUrl'] ?>">
+                    <?= $book['name'] ?>
+                </a>
             </li>
         <?php endforeach; ?>
-    </ul> 
+    </ul>
 </body>
 
 </html>
