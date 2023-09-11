@@ -33,6 +33,6 @@
 //     return $book['releaseYear'] >= 2000;
 // });
 
-
+require "functions.php";
 $heading = "Dashboard";
 require "views/index.view.php";
