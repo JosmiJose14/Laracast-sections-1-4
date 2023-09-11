@@ -6,9 +6,9 @@ require 'functions.php';
 //connect to database and execute a class
 
 require 'Database.php';
-
-$db = new Database();
-$posts = $db->query("select * from posts")->fetchAll(PDO::FETCH_ASSOC);
+$config = require('config.php');
+$db = new Database($config['database']);
+$posts = $db->query("select * from posts")->fetchAll();
 
 
 foreach ($posts as $post) {
