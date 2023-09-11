@@ -7,10 +7,11 @@ require 'functions.php';
 
 require 'Database.php';
 $config = require('config.php');
-$db = new Database($config['database']);
-$posts = $db->query("select * from posts")->fetchAll();
+$db = new Database($config);
+$id = 1;
+$query = "SELECT * FROM posts WHERE id = :id"; // Use a named placeholder
+$params = [':id' => $id]; // Provide the parameter in an associative array
 
-
-foreach ($posts as $post) {
-    echo "<li>" . $post['title'] . "</li>";
-}
+$statement = $db->query($query, $params);
+$posts = $statement->fetch();
+dd($posts);

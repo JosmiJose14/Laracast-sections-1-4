@@ -1,9 +1,11 @@
 <?php
 function dd($value)
 {
+    if (!empty($value)) {
     echo "<pre>";
     var_dump($value);
     echo "</pre>";
+    }
     die();
 }
 function urlIs($value)
