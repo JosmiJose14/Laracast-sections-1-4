@@ -2,7 +2,9 @@
 
 require 'functions.php';
  require 'Database.php';
+ require 'Response.php';
  require 'router.php';
+
 
 //connect to database and execute a class
 
